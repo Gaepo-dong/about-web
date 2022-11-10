@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🎇 Network](README.md)
+* [📻 Network](README.md)
   * [OSI 7 Layer](network/osi-7-layer.md)
   * [TCP](network/tcp.md)
   * [UDP](network/udp.md)
@@ -19,3 +19,6 @@
   * [IP](network/ip.md)
   * [XSS, CSRF, SQL Injection](network/xss-csrf-sql-injection.md)
   * [Authentication vs Authorization](network/authentication-vs-authorization.md)
+* [🔧 Operating System](operating-system.md)
+* [☕ JavaScript](javascript.md)
+* [📑 Web](web.md)
