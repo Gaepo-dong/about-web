@@ -4,7 +4,7 @@
   * [OSI 7 Layer](network/osi-7-layer.md)
   * [TCP](network/tcp.md)
   * [UDP](network/udp.md)
-  * [HTTP version](network/http-version.md)
+  * [HTTP](network/http.md)
   * [HTTP vs HTTPS](network/http-vs-https.md)
   * [TLS/SSL](network/tls-ssl.md)
   * [Load Balancing](network/load-balancing.md)
