@@ -19,7 +19,9 @@ description: HTTP의 진화에 대하여 알아봅시다
 
 HTTP는 애플리케이션 계층의 프로토콜로, 신뢰 가능한 전송 프로토콜이라면 이론상으로 무엇이든 사용할 수 있다. 높은 확장성으로 문서 뿐만이 아닌, 이미지, 비디오, 폼의 결과 전송등도 할 수 있다.
 
-### 특징
+<details>
+
+<summary>특징</summary>
 
 #### 간단하다
 
@@ -33,11 +35,15 @@ HTTP/1.0에서 등장한 HTTP 헤더 덕분에 확장하고 실험하기 쉬워�
 
 HTTP는 상태를 저장하지 않는다(Stateless). 동일한 연결 상에 연속하여 전달된 두 요청 사이에는 연결고리가 존재하지 않는다. 하지만, 헤더 확장성을 이용하여 동일한 상태를 공유하기 위해 각각의 요청에 대한 세션을 만들도록 HTTP 쿠키를 추가하여 상태가 있는 세션을 만들도록 해준다.
 
+</details>
+
 ## HTTP/0.9 <a href="#http-0.9" id="http-0.9"></a>
 
 > 1991년에 나왔으며 초기에는 버전이 존재하지 없었는데 구별하기 위해 추후에 설정
 
-### 특징
+<details>
+
+<summary>특징</summary>
 
 단순한 프로토콜로 요청은 단일 라인으로 구성되며 리소스에 대한 경로로 가능한 메소드는 `GET` 이 유일하다.
 
@@ -55,15 +61,21 @@ About Web
 
 특징으로는 HTTP 헤더가 없어 HTML 파일만 전송될 수 있으며, 다른 유형의 문서는 전송될 수 없다. 상태 혹은 오류 코드또한 없어 특정 HTML 파일을 사람이 처리할 수 있도록, 파일 내부에 문제에 대한 설명과 함께 응답을 실어 보냈다.
 
+</details>
+
 ## HTTP/1.0
 
 > 1996년에 나왔으며 브라우저와 서버가 융통성을 가지도록 확장
 
-### 특징
+<details>
+
+<summary>특징</summary>
 
 * 버전 정보가 각 요청 사이로 전송되기 시작했다
 * 상태코드라인이 응답의 시작에 붙어 전송되어, 브라우저가 요청에 대한 성공과 실패를 알 수 있고, 결과에 대한 처리를 할 수 있게 되었다
 * HTTP 헤더 개념이 요청과 응답을 위해 도입되어, 메타데이터 전송을 허용하며 프로토콜을 유연하고 확장 가능하게 만들었다
+
+</details>
 
 요청의 예시
 
@@ -93,13 +105,17 @@ A page with an image
 
 > 1997년에 등장하여 HTTP의 첫번째 표준으로 자리잡음
 
-### 특징
+<details>
+
+<summary>특징</summary>
 
 * 커넥션을 재사용 하여 시간을 절약할 수 있다
 * 파이프라이닝을 추가하여, 요청에 대한 응답이 완전히 전송되기 전 두번째 요청을 전송하여 커뮤니케이션 레이턴시를 낮췄다
 * [청크된 응답](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Transfer-Encoding)이 지원된다
 * 캐시 제어 메커니즘이 도입되었다
 * 언어, 인코딩, 타입을 포함한 컨텐츠 협상으로, 클라이언트와 서버가 교환하려는 가장 적합한 컨텐츠에 대한 동의가 가능해졌다
+
+</details>
 
 요청의 예시
 
@@ -151,7 +167,9 @@ HTTP/1.1이 텍스트 프로토콜에 비해 HTTP/2는 이진 프로토콜로 St
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>HTTP/1.1 vs HTTP/2</p></figcaption></figure>
 
-### 특징
+<details>
+
+<summary>특징</summary>
 
 #### Multiplexed Streams
 
@@ -171,9 +189,11 @@ HTTP/1.1이 텍스트 프로토콜에 비해 HTTP/2는 이진 프로토콜로 St
 * Header Table과 Huffman Encoding을 통하여 압축
 * 이전 Header의 내용과 중복되는 필드를 재전송 하지 않아 데이터를 절약
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Header Compression의 예</p></figcaption></figure>
+<img src="../.gitbook/assets/image (1).png" alt="Header Compression의 예" data-size="original">
 
 
+
+</details>
 
 ## HTTP/3.0
 
