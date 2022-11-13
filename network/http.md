@@ -190,15 +190,17 @@ HTTP/1.1이 텍스트 프로토콜에 비해 HTTP/2는 이진 프로토콜로 St
 * 전달 오류 수정
 * 연결 마이그레이션
 
+
+
 참고
 
-[HTTP의 진화](https://developer.mozilla.org/ko/docs/Web/HTTP/Basics\_of\_HTTP/Evolution\_of\_HTTP)
+{% embed url="https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP" %}
 
-[HTTP 개요](https://developer.mozilla.org/ko/docs/Web/HTTP/Overview)
+{% embed url="https://developer.mozilla.org/ko/docs/Web/HTTP/Overview" %}
 
-[QUIC](https://developer.mozilla.org/ko/docs/Glossary/QUIC)
+{% embed url="https://developer.mozilla.org/ko/docs/Glossary/QUIC" %}
 
-[https://hirlawldo.tistory.com/106](https://hirlawldo.tistory.com/106)
+{% embed url="https://hirlawldo.tistory.com/106" %}
 
 
 
