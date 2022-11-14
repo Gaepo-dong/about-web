@@ -38,7 +38,7 @@ SSL(Secure Socket Layer)이 1995년 Netscape에 의해 공개되고, 표준화�
 
 SSL의 구성은 다음과 같다.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>SSL Architecture</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>SSL Architecture</p></figcaption></figure>
 
 ### 암호화
 
@@ -103,7 +103,7 @@ CA의 인증과정은 다음과 같다
 
 > 클라이언트의 CA리스트를 활용하여 인증
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>keyChain에 등록되어 있는 인증서</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>keyChain에 등록되어 있는 인증서</p></figcaption></figure>
 
 서버가 CA 기관에서 인증받았다는 무결성을 확인하는것은 다음과 같다.
 
@@ -144,7 +144,7 @@ TCP handshake가 끝난 후 발생
 
 그림으로 도식화 하여 보면 다음과 같다
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>full TLS handshake diagram</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>full TLS handshake diagram</p></figcaption></figure>
 
 
 

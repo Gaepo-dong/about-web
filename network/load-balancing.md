@@ -8,7 +8,7 @@ description: 로드밸런싱에 대하여 알아보자
 
 ### Scale-up vs Scale-out
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>scale-up vs scale-out</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>scale-up vs scale-out</p></figcaption></figure>
 
 scale-up : 서버 자체의 성능을 확장
 
