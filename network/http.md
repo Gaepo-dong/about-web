@@ -165,7 +165,7 @@ HTTP/1.1이 텍스트 프로토콜에 비해 HTTP/2는 이진 프로토콜로 St
 * Message: 논리적 요청 또는 응답 메세지에 매핑되는 프레임의 시퀀스
 * Frame: HTTP/2.0의 최소 단위로, 각 최소 단위에는 하나의 프라임 헤더가 존재한다.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>HTTP/1.1 vs HTTP/2</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>HTTP/1.1 vs HTTP/2</p></figcaption></figure>
 
 <details>
 
@@ -189,7 +189,7 @@ HTTP/1.1이 텍스트 프로토콜에 비해 HTTP/2는 이진 프로토콜로 St
 * Header Table과 Huffman Encoding을 통하여 압축
 * 이전 Header의 내용과 중복되는 필드를 재전송 하지 않아 데이터를 절약
 
-<img src="../.gitbook/assets/image (1).png" alt="Header Compression의 예" data-size="original">
+<img src="../.gitbook/assets/image (1) (1).png" alt="Header Compression의 예" data-size="original">
 
 
 

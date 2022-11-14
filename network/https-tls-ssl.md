@@ -38,7 +38,7 @@ SSL(Secure Socket Layer)이 1995년 Netscape에 의해 공개되고, 표준화�
 
 SSL의 구성은 다음과 같다.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>SSL Architecture</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>SSL Architecture</p></figcaption></figure>
 
 ### 암호화
 
@@ -144,7 +144,7 @@ TCP handshake가 끝난 후 발생
 
 그림으로 도식화 하여 보면 다음과 같다
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>full TLS handshake diagram</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>full TLS handshake diagram</p></figcaption></figure>
 
 
 
