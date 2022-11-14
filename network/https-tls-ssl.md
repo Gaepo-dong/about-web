@@ -144,7 +144,7 @@ TCP handshake가 끝난 후 발생
 
 그림으로 도식화 하여 보면 다음과 같다
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>full TLS handshake diagram</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>full TLS handshake diagram</p></figcaption></figure>
 
 
 
