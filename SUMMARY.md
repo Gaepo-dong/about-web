@@ -8,7 +8,7 @@
   * [HTTPS, TLS, SSL](network/https-tls-ssl.md)
   * [Load Balancing](network/load-balancing.md)
   * [HTTP Request](network/http-request.md)
-  * [URL vs URI](network/url-vs-uri.md)
+  * [URL vs URI vs URN](network/url-vs-uri-vs-urn.md)
   * [DNS](network/dns.md)
   * [CORS](network/cors.md)
   * [Cookie, Session, JWT](network/cookie-session-jwt.md)
