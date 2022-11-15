@@ -13,7 +13,7 @@ description: URL, URI, URN 차이를 알아보자
 * 하위 개념으로 URL(Locator), URN(Name), URC(Citation) 등이 있다.
 * URC(citation)은 자원이 아닌 메타데이터를 가리킬 때 사용
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (1).png>)
 
 ## URL이란?
 
