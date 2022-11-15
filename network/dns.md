@@ -53,7 +53,7 @@ naver의 IP를 nslookup 명령어로 찾아보면 다음과 같다.
 
 ### DNS 작동원리
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>modocode.com의 DNS query 순서</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>modocode.com의 DNS query 순서</p></figcaption></figure>
 
 순서를 보면 다음과 같다
 
@@ -72,13 +72,85 @@ naver의 IP를 nslookup 명령어로 찾아보면 다음과 같다.
 
 앞에서 naver.com에 해당하는 IP를 봤을 때, 한 IP가 아닌 여러 IP가 제공된다는것을 볼 수 있었다. 그럼 브라우저는 어떤 IP로 접속을 해야될까?
 
-일반적으로 Round Robin 방식을 활용하지만, 이를 활용한 경우 문제가 발생 할 수 있다.
+일반적으로 Round Robin 방식을 활용하지만, 이를 활용한 경우 문제가 발생 할 수 있다. 근본적인 문제들은 다음과 같다
 
+* 서버의 상태를 알 수 없어 서비스를 실패하는 유저가 생길 수 있다
+* Round Robin임으로 정교한 로드 밸런싱이 힘들다
+* 멀리 떨어진 위치의 서버로 연결 될 수 있다
 
+즉 DNS에서 IP에 대한 Health Check와 부하 분산 알고리즘을 적용하면 되고, GSLB과 이를 구현해준다.
+
+{% hint style="info" %}
+Health Check의 동작원리는 사용자가 GSLB에서 제공하는 IP 주소로 접근 했을 때, 정상적인 응답이라면 Health OK, 오류값이 온다면 재전송 후 재전송 횟수 이내에 정상적인 응답이 없다면 다운 됐다고 판단&#x20;
+{% endhint %}
+
+#### GSLB 동작 방식
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>GSLB Flow</p></figcaption></figure>
+
+이제 GSLB 버전으로 5번부터 확인해보자
+
+&#x20; 5\. `modocode.com`에 대한 권한은 GSLB에 있으므로, GSLB에 물어볼 수 있게 IP 주소를 제공
+
+&#x20; 6\. Local DNS가 GSLB에 `modocode.com`에 대한 Query를 물어본다
+
+&#x20; 7\. 8. 9. 10. 11. GSLB가 `modocode.com`에 대한 헬스 체크를 수행 후, 알고리즘에 따라 최적의 IP 주소를 반환한다
+
+&#x20; 12\. 최종으로 받은 IP 주소로 패킷을 보낼 수 있다
+
+#### GSLB Algorithm
+
+앞서, GSLB가 최적의 IP를 반환해준다고 했는데, 이  알고리즘에는 여러 방식이 존재한다. AWS Route53은 직접 라우팅 정책을 선택할 수 도 있는데, 방식들은 다음과 같다.
+
+<details>
+
+<summary>GSLB Algorithms</summary>
+
+* **단순 라우팅 정책(Simple routing policy)**&#x20;
+  * 도메인에 대해 특정 기능을 수행하는 하나의 리소스만 있는 경우   사용
+
+<!---->
+
+* **장애 조치 라우팅 정책(Failover routing policy)**&#x20;
+  * 액티브-패시브 장애 조치를 구성하려는 경우에 사용
+
+<!---->
+
+* **지리 위치 라우팅 정책(Geolocation routing policy)**&#x20;
+  * 사용자의 위치에 기반하여 트래픽을 라우팅하려는 경우에 사용
+
+<!---->
+
+* **지리 근접 라우팅 정책(Geoproximity routing policy)**&#x20;
+  * 리소스의 위치를 기반으로 트래픽을 라우팅하고 필요에 따라 한 위치의 리소스에서 다른 위치의 리소스로 트래픽을 보내려는 경우에 사용
+
+<!---->
+
+* **지연 시간 라우팅 정책**&#x20;
+  * 여러 AWS 리전에 리소스가 있고 최상의 지연 시간을 제공하는 리전으로 트래픽을 라우팅하려는 경우에 사용
+
+<!---->
+
+* **IP 기반 라우팅 정책**
+  * 사용자의 위치에 기반하여 트래픽을 라우팅하고 트래픽이 시작되는 IP 주소가 있는 경우에 사용
+
+<!---->
+
+* **다중 응답 라우팅 정책(Multivalue answer routing policy)**
+  * Route 53이 DNS 쿼리에 무작위로 선택된 최대 8개의 정상 레코드로 응답하게 하려는 경우에 사용
+
+<!---->
+
+* **가중치 기반 라우팅 정책(Weighted routing policy)**
+  * 사용자가 지정하는 비율에 따라 여러 리소스로 트래픽을 라우팅하려는 경우에 사용
+
+</details>
 
 
 
 참고
+
+{% embed url="https://docs.aws.amazon.com/ko_kr/Route53/latest/DeveloperGuide/routing-policy.html" %}
 
 {% embed url="https://aws.amazon.com/ko/route53/what-is-dns/" %}
 
