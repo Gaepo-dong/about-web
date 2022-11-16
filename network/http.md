@@ -165,7 +165,7 @@ HTTP/1.1이 텍스트 프로토콜에 비해 HTTP/2는 이진 프로토콜로 St
 * Message: 논리적 요청 또는 응답 메세지에 매핑되는 프레임의 시퀀스
 * Frame: HTTP/2.0의 최소 단위로, 각 최소 단위에는 하나의 프라임 헤더가 존재한다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>HTTP/1.1 vs HTTP/2</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p>HTTP/1.1 vs HTTP/2</p></figcaption></figure>
 
 <details>
 

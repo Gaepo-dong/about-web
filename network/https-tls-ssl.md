@@ -38,7 +38,7 @@ SSL(Secure Socket Layer)이 1995년 Netscape에 의해 공개되고, 표준화�
 
 SSL의 구성은 다음과 같다.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>SSL Architecture</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>SSL Architecture</p></figcaption></figure>
 
 ### 암호화
 
@@ -60,7 +60,7 @@ A, B 두 개의 키로 A키로 암호화한 데이터는 B키로만 복호화 �
 
 그리고 이러한 암호화, 복호화 방식은 RSA 알고리즘을 통해 구현된다.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>간단한 비대칭키 암호화</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>간단한 비대칭키 암호화</p></figcaption></figure>
 
 하지만 비대칭키는 RSA 알고리즘을 이용하여 CPU 리소스를 많이 소모하게 된다.
 
@@ -82,7 +82,7 @@ A, B 두 개의 키로 A키로 암호화한 데이터는 B키로만 복호화 �
 2. 서버측의 공개키
 3. 지문, 디지털 서명 등
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>modoco의 인증서</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>modoco의 인증서</p></figcaption></figure>
 
 우선 인증서를 발급 받는 방법부터 알아보자
 

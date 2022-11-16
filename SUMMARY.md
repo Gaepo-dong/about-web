@@ -7,7 +7,7 @@
   * [HTTP](network/http.md)
   * [HTTPS, TLS, SSL](network/https-tls-ssl.md)
   * [Load Balancing](network/load-balancing.md)
-  * [HTTP Request & Response](network/http-request-and-response.md)
+  * [HTTP Request & Response](network/http-request.md)
   * [URL vs URI vs URN](network/url-vs-uri-vs-urn.md)
   * [DNS](network/dns.md)
   * [CORS](network/cors.md)
