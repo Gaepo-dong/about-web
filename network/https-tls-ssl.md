@@ -60,7 +60,7 @@ A, B 두 개의 키로 A키로 암호화한 데이터는 B키로만 복호화 �
 
 그리고 이러한 암호화, 복호화 방식은 RSA 알고리즘을 통해 구현된다.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>간단한 비대칭키 암호화</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>간단한 비대칭키 암호화</p></figcaption></figure>
 
 하지만 비대칭키는 RSA 알고리즘을 이용하여 CPU 리소스를 많이 소모하게 된다.
 
@@ -103,7 +103,7 @@ CA의 인증과정은 다음과 같다
 
 > 클라이언트의 CA리스트를 활용하여 인증
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>keyChain에 등록되어 있는 인증서</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>keyChain에 등록되어 있는 인증서</p></figcaption></figure>
 
 서버가 CA 기관에서 인증받았다는 무결성을 확인하는것은 다음과 같다.
 

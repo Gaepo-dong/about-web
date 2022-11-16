@@ -86,7 +86,7 @@ Health Check의 동작원리는 사용자가 GSLB에서 제공하는 IP 주소�
 
 #### GSLB 동작 방식
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>GSLB Flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>GSLB Flow</p></figcaption></figure>
 
 이제 GSLB 버전으로 5번부터 확인해보자
 
