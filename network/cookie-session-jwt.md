@@ -152,7 +152,27 @@ your-256-bit-secret
 * 한번 발급되면, 유효기간이 만료될 때 까지 사용이 가능함
 * 특정 사용자의 접속을 만료할 수 없음
 
-## 보안전략
+### 보안전략
+
+#### Access Token
+
+사용자가 로그인 할 때, 지정된 기간동안 사용할 수 있는 Token을 발급할 수 있다.&#x20;
+
+만료 시간을 짧게 할수록 보안이 강화되지만, 자주 로그인을 해야된다.
+
+#### Sliding Sessions
+
+유효한 AccessToken을 가진 클라이언트의 요청에 새로운 AccessToken을 발급하는 방법이다.&#x20;
+
+지속적으로 이용하는 클라이언트에게 자동으로 토큰 만료 기한을 늘려주는 방법으로, Access Token에서 자주 로그인을 해야되는 단점을 보완한다.
+
+#### Refresh Token
+
+Access Token과 Refresh Token을 클라이언트에게 함께 발급해주는 방법으로, Access Token은 만료 기간을 짧게, Refresh Token은 길게 설정한다.
+
+클라이언트가 Access Token이 만료되면, Refresh Token을 활용하여 자동으로 Access Token을 재발급하는 방식이다.
+
+주로 Refresh Token은 서버의 Storage에 저장하여 검증에 활용하므로, 강제로 토큰을 만료도 가능하다. 하지만 Refresh Token을 활용할수록 I/O 작업이 필수적이다.
 
 
 
