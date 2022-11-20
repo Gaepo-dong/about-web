@@ -103,7 +103,7 @@ CA의 인증과정은 다음과 같다
 
 > 클라이언트의 CA리스트를 활용하여 인증
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>keyChain에 등록되어 있는 인증서</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>keyChain에 등록되어 있는 인증서</p></figcaption></figure>
 
 서버가 CA 기관에서 인증받았다는 무결성을 확인하는것은 다음과 같다.
 

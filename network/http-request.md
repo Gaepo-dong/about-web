@@ -27,7 +27,7 @@ HTTP가 기억이 안난다면?
 
 #### Request Header
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>HTTP Request Header</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>HTTP Request Header</p></figcaption></figure>
 
 * Host : Client가 요청한 도메인의 정보
 * User-Agent : 사용자 브라우저에 대한 정보
