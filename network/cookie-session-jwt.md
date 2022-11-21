@@ -86,7 +86,7 @@ Cookies : persistent cookie와 session cookie로 나뉘며, 4KB의 저장공간�
 
 ### 구조
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>jwt.io를 활용하여 만든 임시 JWT</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>jwt.io를 활용하여 만든 임시 JWT</p></figcaption></figure>
 
 해당 JWT를 parsing 하면 다음과 같은 구조를 가지고 있다.
 

@@ -53,7 +53,7 @@ naver의 IP를 nslookup 명령어로 찾아보면 다음과 같다.
 
 ### DNS 작동원리
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>modocode.com의 DNS query 순서</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>modocode.com의 DNS query 순서</p></figcaption></figure>
 
 순서를 보면 다음과 같다
 
