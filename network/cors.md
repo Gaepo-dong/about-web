@@ -98,8 +98,10 @@ Access-Control-Allow-Origin 헤더가 `*` 가 아닌, 분명한 Origin으로 설
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Credential Request flow</p></figcaption></figure>
 
-``
 
-`참고`
+
+
+
+참고
 
 {% embed url="https://it-eldorado.tistory.com/163" %}
