@@ -45,7 +45,7 @@ Header에서 지정한 Content-Type 과 Length에 맞춰진 실제 Entity의 정
 
 ### HTTP Response
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>HTTP Response Message Format</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p>HTTP Response Message Format</p></figcaption></figure>
 
 #### Status Line
 

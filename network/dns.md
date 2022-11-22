@@ -53,7 +53,7 @@ naver의 IP를 nslookup 명령어로 찾아보면 다음과 같다.
 
 ### DNS 작동원리
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>modocode.com의 DNS query 순서</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>modocode.com의 DNS query 순서</p></figcaption></figure>
 
 순서를 보면 다음과 같다
 
@@ -86,7 +86,7 @@ Health Check의 동작원리는 사용자가 GSLB에서 제공하는 IP 주소�
 
 #### GSLB 동작 방식
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>GSLB Flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>GSLB Flow</p></figcaption></figure>
 
 이제 GSLB 버전으로 5번부터 확인해보자
 

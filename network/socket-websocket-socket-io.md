@@ -10,7 +10,7 @@ description: Socket, WebSocket, SocketIO에 대하여 알아보자
 
 즉 소프트웨어와 소프트웨어간에 연결을 하여 데이터를 송수신 시켜주는 단순한 친구
 
-<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Socket Flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption><p>Socket Flow</p></figcaption></figure>
 
 ### 클라이언트 흐름
 

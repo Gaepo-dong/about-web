@@ -48,5 +48,5 @@
   * [CISC vs RISC](operating-system/cisc-vs-risc.md)
   * [Byte Order](operating-system/byte-order.md)
 * [☕ JavaScript](javascript.md)
-* [📑 Web](web/README.md)
+* [📑 Web](web.md)
   * [XSS, CSRF, SQL Injection](web/xss-csrf-sql-injection.md)
