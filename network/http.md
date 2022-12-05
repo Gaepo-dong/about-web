@@ -189,7 +189,7 @@ HTTP/1.1이 텍스트 프로토콜에 비해 HTTP/2는 이진 프로토콜로 St
 * Header Table과 Huffman Encoding을 통하여 압축
 * 이전 Header의 내용과 중복되는 필드를 재전송 하지 않아 데이터를 절약
 
-<img src="../.gitbook/assets/image (1).png" alt="Header Compression의 예" data-size="original">
+<img src="../.gitbook/assets/image (1) (3).png" alt="Header Compression의 예" data-size="original">
 
 
 
