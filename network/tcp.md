@@ -100,7 +100,41 @@ Go back N 은 단순한 sliding window를 활용한 방식이다. window의 사�
 
 ## 혼잡제어
 
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>simple congestion control</p></figcaption></figure>
 
+앞서 TCP의 reliable한 특징 중 congestion 과 overload를 담당해주는 특징이다.
+
+만약 한 라우터에 데이터가 몰리게 되면 어떻게 될까? 또 재전송을 하게 되고 데이터가 몰리게 되는 혼잡을 가중시키는 상황이 올 수 있다. 이러한 혼잡을 송신측에서 전송속도를 줄이며 제어하는 기술이다.
+
+### AIMD(Additive Increase / Multiplicative Decrease)
+
+> 처음 패킷을 보내보고 문제가 없다면 window size를 1씩 늘려가는 방식
+
+패킷 전송에 실패한 경우 보내는 속도를 절반으로 줄이며 조절한다.
+
+시간이 흐를수록 모든 라우터가 평행하게 데이터를 분배받을 수 있다.
+
+하지만, 초기에 높은 대역폭을 가질 수 없으며 혼잡해지는 상황을 미리 감지하지 못하고, 혼잡해진 후 대역폭을 낮추는 방식이다.
+
+### Slow Start
+
+AIMD 방식에서 ACK packet마다 window 사이즈를 1씩 늘려주는 방식으로, 한 주기마다 window size를 2배씩 증가시킬 수 있다.
+
+혼잡 제어현상이 발생하면 window size를 1로 낮춘다.
+
+처음에는 네트워크 수용량을 예측할 수 없지만, 혼잡 현장이 발생한 후 예측을 할 수 있다 -> window size의 절반까지는 2배씩 증가 후 이후부터 1씩 증가하는 방식을 사용
+
+### Fest Retransimit
+
+> packet을 받는쪽에서 다음 packet이 먼저 도착한 경우에도 ACK를 보내는 방식
+
+순서대로 도착한 packet의 다음 packet의 순서를 ACK에 포함하여 보내 손실된다면 송신측에서 순번이 중복된 packet을 받는다. -> 이러한 중복된 순번의 패킷을 3개 받으면 재전송을 하며, 혼잡을 감지하여 window size를 줄여준다.
+
+### Fast Recovery
+
+> 혼잡한 상태가 되면, window size를 1로 줄이지 않고 반으로 줄인 후 선형증가시키는 방식
+
+혼잡상황을 겪고 난 후 AIMD 방식을 사용
 
 
 

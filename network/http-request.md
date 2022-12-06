@@ -12,7 +12,7 @@ HTTP가 기억이 안난다면?
 
 ### HTTP Request
 
-<figure><img src="../.gitbook/assets/image (4) (3).png" alt=""><figcaption><p>HTTP Request Format</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption><p>HTTP Request Format</p></figcaption></figure>
 
 #### Request Line
 
