@@ -12,7 +12,7 @@ HTTP가 기억이 안난다면?
 
 ### HTTP Request
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>HTTP Request Format</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (3).png" alt=""><figcaption><p>HTTP Request Format</p></figcaption></figure>
 
 #### Request Line
 
@@ -27,7 +27,7 @@ HTTP가 기억이 안난다면?
 
 #### Request Header
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>HTTP Request Header</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption><p>HTTP Request Header</p></figcaption></figure>
 
 * Host : Client가 요청한 도메인의 정보
 * User-Agent : 사용자 브라우저에 대한 정보

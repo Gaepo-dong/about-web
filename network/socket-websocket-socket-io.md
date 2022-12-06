@@ -80,7 +80,7 @@ description: Socket, WebSocket, SocketIO에 대하여 알아보자
 
 WebSocket 연결에 대한 Flow는 다음과 같다.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>WebSocket Flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>WebSocket Flow</p></figcaption></figure>
 
 > 여기서 Upgrade는 앞으로 서버, 전송, 프로토콜 연결을 다른 프로토콜(웹소켓)로 업그레이드 하겠다는 뜻
 

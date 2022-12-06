@@ -64,11 +64,13 @@ description: TCP 박살내기
 
 패킷을 하나씩 보내야 하는 문제점이 있어 매우 비효율적이다
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>simple stop and wait</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>simple stop and wait</p></figcaption></figure>
 
 ### Sliding Window
 
 > 수신측에서 설정한 윈도우 만큼 ACK없이 패킷을 전송할 수 있게 하여 데이터 흐름을 동적으로 조절
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>simple sliding window</p></figcaption></figure>
 
 윈도우의 크기는 보통 sender가 receiver에게 ACK를 보낼 때 TCP header에 담아 보낸다.
 
@@ -76,15 +78,29 @@ description: TCP 박살내기
 
 #### Go back N ARQ
 
-<figure><img src="../.gitbook/assets/sliding-window-protocol-2.png" alt=""><figcaption><p>go back n ARQ</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Go-Back-N ARQ flow</p></figcaption></figure>
 
-Go back N 은 단순한 sliding window를 활용한 방식이다. window의 사이즈가 6이면, A 는 \[0, 1, 2, 3, 4, 5] 를 보낼 수 있으므로 천천히 0부터 보내게 된다. 그리고 receiver도 비슷하게 0부터 받으며 천천히 윈도우만큼 받아간다.
+Go back N 은 단순한 sliding window를 활용한 방식이다. window의 사이즈가 6이면, A 는 \[0, 1, 2, 3, 4, 5] 를 보낼 수 있으므로 천천히 0부터 보내게 된다. 그리고 receiver도 비슷하게 0부터 받으며 천천히 윈도우만큼 받아간다.&#x20;
+
+그러던 중 화면처럼 Data 2에 문제가 생겨 NAK를 받으면 그 후에 오는 데이터는 폐기해 버린다. 그리고 순서대로 올 경우에만 인정을 하고 받게된다.&#x20;
+
+마찬가지로 Data4가 유실된채 Data5가 오게되면, 순서대로 오지 않았기에 폐기하고 Data4를 다시 받기 위하여 NAK4를 보내게 된다.
 
 #### Selective Repeat ARQ
 
-<figure><img src="../.gitbook/assets/sliding-window-protocol-4.png" alt=""><figcaption><p>selective repeat ARQ</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Selective Repeat ARQ</p></figcaption></figure>
+
+
+
+위 Go-Back-N 을 사용하게되면, 순서는 보장할 수 있지만 잘 받은 데이터도 순서대로 오지 않았을 경우 다시 받아야되는 불필요한 트래픽을 요구하게된다. 그래서 selective-repeat에서는 어떠한 데이터를 받을지 선택하여, 그 데이터부터 전부 다시 받는것이 아닌, 특정한 데이터만 재요청 및 응답이 가능할 수 있게 된다.
+
+그림에서 보이듯이 Data2가 문제가 된 상황에서, 이미 Data3을 받았다면 폐기하지않고, Data2만 재요청 후 받은 후 sort하여 관리하게된다.
+
+마찬가지로 Data5가 유실된 상황에서도, 버퍼로 Data6을 보관하고 NAK 5를 전송한 후 Data5가 다시 올바르게 온다면, sort하여 차례로 패킷을 맞추고 진행하게된다.
 
 ## 혼잡제어
+
+
 
 
 
@@ -93,5 +109,3 @@ Go back N 은 단순한 sliding window를 활용한 방식이다. window의 사�
 참고
 
 {% embed url="https://gyoogle.dev/blog/computer-science/network/%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4%20&%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4.html" %}
-
-{% embed url="https://www.javatpoint.com/sliding-window-protocol" %}
