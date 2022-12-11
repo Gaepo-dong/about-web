@@ -70,7 +70,7 @@ description: TCP 박살내기
 
 > 수신측에서 설정한 윈도우 만큼 ACK없이 패킷을 전송할 수 있게 하여 데이터 흐름을 동적으로 조절
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>simple sliding window</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (4).png" alt=""><figcaption><p>simple sliding window</p></figcaption></figure>
 
 윈도우의 크기는 보통 sender가 receiver에게 ACK를 보낼 때 TCP header에 담아 보낸다.
 
@@ -78,7 +78,7 @@ description: TCP 박살내기
 
 #### Go back N ARQ
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Go-Back-N ARQ flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>Go-Back-N ARQ flow</p></figcaption></figure>
 
 Go back N 은 단순한 sliding window를 활용한 방식이다. window의 사이즈가 6이면, A 는 \[0, 1, 2, 3, 4, 5] 를 보낼 수 있으므로 천천히 0부터 보내게 된다. 그리고 receiver도 비슷하게 0부터 받으며 천천히 윈도우만큼 받아간다.&#x20;
 

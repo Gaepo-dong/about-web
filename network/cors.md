@@ -6,7 +6,7 @@ description: CORS 박살내기
 
 ## Origin
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>URL구성요소</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>URL구성요소</p></figcaption></figure>
 
 URI에서 Protocol, Host, Port부분을 origin이라 부른다.
 
