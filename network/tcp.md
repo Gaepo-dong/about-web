@@ -23,7 +23,7 @@ description: TCP 박살내기
 
 ## 3 way handshake
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>simple 3 way handshake</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>simple 3 way handshake</p></figcaption></figure>
 
 1. client가 server에게 SYNC(x) 패킷을 보낸다
 2. server가 SYNC(x)를 받고, 잘 받아다는 의미로 ACK(x+1)과 SYNC(y)를 보낸다
@@ -78,7 +78,7 @@ description: TCP 박살내기
 
 #### Go back N ARQ
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>Go-Back-N ARQ flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption><p>Go-Back-N ARQ flow</p></figcaption></figure>
 
 Go back N 은 단순한 sliding window를 활용한 방식이다. window의 사이즈가 6이면, A 는 \[0, 1, 2, 3, 4, 5] 를 보낼 수 있으므로 천천히 0부터 보내게 된다. 그리고 receiver도 비슷하게 0부터 받으며 천천히 윈도우만큼 받아간다.&#x20;
 
@@ -88,7 +88,7 @@ Go back N 은 단순한 sliding window를 활용한 방식이다. window의 사�
 
 #### Selective Repeat ARQ
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Selective Repeat ARQ</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Selective Repeat ARQ</p></figcaption></figure>
 
 
 
@@ -100,7 +100,7 @@ Go back N 은 단순한 sliding window를 활용한 방식이다. window의 사�
 
 ## 혼잡제어
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>simple congestion control</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>simple congestion control</p></figcaption></figure>
 
 앞서 TCP의 reliable한 특징 중 congestion 과 overload를 담당해주는 특징이다.
 
