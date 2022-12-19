@@ -26,7 +26,7 @@ DHCP는 IP주소 및 기타 통신 매개변수를 네트워크에 연결된 장
 
 DHCP의 과정을 표로 보면 다음과 같다
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Simple DHCP Flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Simple DHCP Flow</p></figcaption></figure>
 
 1.  DHCP Discover
 
