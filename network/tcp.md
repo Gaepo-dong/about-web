@@ -88,7 +88,7 @@ Go back N 은 단순한 sliding window를 활용한 방식이다. window의 사�
 
 #### Selective Repeat ARQ
 
-<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Selective Repeat ARQ</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2) (1).png" alt=""><figcaption><p>Selective Repeat ARQ</p></figcaption></figure>
 
 
 

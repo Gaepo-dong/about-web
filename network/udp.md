@@ -10,7 +10,7 @@ UDP는 User Data Protocol의 약자로, 사용자 데이터그램 규약 즉 데
 
 데이터그램이란, 독립적인 관계를 나타내는 패킷으로 경로 없이 매 패킷마다 다른 경로로 전송되며 다음 그림과 같이 독립적인 관계를 지니는 프로토콜이다.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Easy UDP Flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Easy UDP Flow</p></figcaption></figure>
 
 ### UDP Socket Flow
 
