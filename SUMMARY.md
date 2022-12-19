@@ -23,7 +23,6 @@
   * [Authentication vs Authorization](network/authentication-vs-authorization.md)
   * [CSP](network/csp.md)
   * [gRPC vs tRPC](network/grpc-vs-trpc.md)
-  * [Long Polling](network/long-polling.md)
 * [🔧 Operating System](operating-system/README.md)
   * [Process vs Thread](operating-system/process-vs-thread.md)
   * [File Descriptor](operating-system/file-descriptor.md)
