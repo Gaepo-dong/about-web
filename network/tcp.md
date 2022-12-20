@@ -23,7 +23,7 @@ description: TCP 박살내기
 
 ## 3 way handshake
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>simple 3 way handshake</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption><p>simple 3 way handshake</p></figcaption></figure>
 
 1. client가 server에게 SYNC(x) 패킷을 보낸다
 2. server가 SYNC(x)를 받고, 잘 받아다는 의미로 ACK(x+1)과 SYNC(y)를 보낸다

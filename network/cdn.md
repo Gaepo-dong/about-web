@@ -18,7 +18,7 @@ CDN은 지리적 제약 없이 전 세계 사용자들에게 빠르고 안전하
 
 
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Acutal CloudFront CDN edge locations</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Acutal CloudFront CDN edge locations</p></figcaption></figure>
 
 ## 동작 원리
 
