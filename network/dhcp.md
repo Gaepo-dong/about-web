@@ -14,7 +14,7 @@ DHCP는 IP주소 및 기타 통신 매개변수를 네트워크에 연결된 장
 
 즉, DHCP가 없었다면 수동으로 네트워크 관리자가 IP 주소를 할당해야되며, 비효율적이며 오류 발생 가능성이 높아진다.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Simple DHCP Clients &#x26; Server</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (4).png" alt=""><figcaption><p>Simple DHCP Clients &#x26; Server</p></figcaption></figure>
 
 ### 동작원리
 
