@@ -20,8 +20,6 @@
   * [CORS](network/cors.md)
   * [CDN](network/cdn.md)
   * [PDU](network/pdu.md)
-  * [Authentication vs Authorization](network/authentication-vs-authorization.md)
-  * [CSP](network/csp.md)
   * [gRPC vs tRPC](network/grpc-vs-trpc.md)
 * [🔧 Operating System](operating-system/README.md)
   * [Process vs Thread](operating-system/process-vs-thread.md)

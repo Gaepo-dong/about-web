@@ -30,7 +30,7 @@ IP 주소 자체가 가변적이고, 한 IP 안에 여러 서버 혹은 PC가 �
 
 ## 동작과정
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>simple ARP flow #1</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>simple ARP flow #1</p></figcaption></figure>
 
 1.  PC 1이 ARP 요청을 Broadcast 하여 PC2의 IP 주소를 가진 잔말이 있는지 물어본다.
 

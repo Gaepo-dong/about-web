@@ -10,7 +10,7 @@ description: DNS의 동작원리에 대하여 알아보자
 
 naver의 IP를 nslookup 명령어로 찾아보면 다음과 같다.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>naver.com의 domain 주소</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>naver.com의 domain 주소</p></figcaption></figure>
 
 그리고 해당 IP 4개 다 naver.com 으로 잘 매핑되는 것을 볼 수 있다.
 

@@ -25,7 +25,7 @@ Network Address Translation의 약자로, 네트워크 주소 변환을 담당�
 
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>My Public IP</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (7) (2).png" alt=""><figcaption><p>Simple NAT</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Simple NAT</p></figcaption></figure>
 
 > Private Network의 대역
 >
@@ -59,7 +59,7 @@ Network Address Translation의 약자로, 네트워크 주소 변환을 담당�
 
 그래서 NAT Table을 활용하여, Gateway에 나에대한 정보를 미리 보관해둔다. Protocol, Private IP, SRC\_IP, DEST\_IP 에 해당한 테이블을 기록해두고, 응답 패킷이 돌아올 때 그 값을 찾아 원하는 사설망에 보내줄 수 있다.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Simple NAT with NAT Table</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Simple NAT with NAT Table</p></figcaption></figure>
 
 그리하여, NAT의 장점은 보안을 봤을 때, 외부에서 내부로 처음 들어오는 상황이라면 NAT Table에 기록되지 않아 사설망으로 찾을 수 없으니 보안적으로 안전해진다는 말을 이해할 수 있다.
 

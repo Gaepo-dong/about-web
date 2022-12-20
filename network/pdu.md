@@ -10,7 +10,7 @@ description: PDU에 대하여 알아보자
 
 ## OSI 모델
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>simple PDU diagram</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>simple PDU diagram</p></figcaption></figure>
 
 ## PDU의 내용
 
@@ -33,7 +33,7 @@ description: PDU에 대하여 알아보자
 
 상향/하향 두 통신 계층 간 전달되는 실제 정보
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>simple SDU &#x26; PDU relation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>simple SDU &#x26; PDU relation</p></figcaption></figure>
 
 {% hint style="info" %}
 SDU가 PDU화 하기 전, Fragment / Aggregation이 일어날 수 있음

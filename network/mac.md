@@ -47,7 +47,7 @@ MAC 구조는 48bit로 지정되며, 컴퓨터의 하드웨어에 존재하며 �
 
 실제로 dnschekcr.org 를 사용하여 나의 MAC 주소를 가지고 해당 NIC 를 제작한 회사 (Apple, Inc.)를 확인할 수 있다.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>find info via MAC address</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption><p>find info via MAC address</p></figcaption></figure>
 
 참고
 
