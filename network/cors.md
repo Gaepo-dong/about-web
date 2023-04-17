@@ -96,7 +96,7 @@ XMLHttpRequest, ajax, axios 등은 `withCredentials` 옵션을 `true` 로 설정
 Access-Control-Allow-Origin 헤더가 `*` 가 아닌, 분명한 Origin으로 설정되고, 서버의 Access-Control-Allow-Credentials 헤더가 `true` 로 설정되어야 함에 주의
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Credential Request flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2) (2).png" alt=""><figcaption><p>Credential Request flow</p></figcaption></figure>
 
 
 

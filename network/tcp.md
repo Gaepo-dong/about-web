@@ -64,7 +64,7 @@ description: TCP 박살내기
 
 패킷을 하나씩 보내야 하는 문제점이 있어 매우 비효율적이다
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>simple stop and wait</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>simple stop and wait</p></figcaption></figure>
 
 ### Sliding Window
 
