@@ -55,3 +55,57 @@ Process와 Thread의 비교를 하기 전, 우선 Process의 구조에 대한 �
 >
 > 1. IPC (Inter Process Communication) : Message Passing으로 전달
 > 2. LPL (Local inter-Process Communication) : shared memory 공간을 활용하여 데이터 전달
+
+### 병렬 vs 동시
+
+앞서 간략하게 병렬과 동시성 이야기를 했었는데, 조금 깊게 봐야할 필요가 있다.
+
+우선 병렬은 정말 두개가 동시에 일어나는 것이다. 예를들어, 컴퓨터가 4코어 8쓰레드라면, 실제로 최대 4개의 작업은 병렬적으로 진행할 수 있다.&#x20;
+
+하지만 컴퓨터가 동작할때 4개의 작업만 돌아가는것은 아니다. 지금 내가 이 글을 쓰고 있는것만 하여도, OS가 구동되고 있으며, 크롬에서 여러개의 Reference들을 보기위한 탭이 존재하고, VSC에서는 실제로 글을 작성하고, Spotify로 잔잔한 음악도 듣는 등 정말 많은 작업들이 구동되고 있다. 이런것들은 동시(Concurrent)에 돌아가고 있는것이다. 조금 더 컴퓨터 용어에 빗대어 말하자면 큰 작업들이 Context-Switching을 하며 번갈아가며 작업중이다.&#x20;
+
+> 사람이 멀티태스킹의 엄청난 속도로 이루어진다고 보면 된다
+
+그럼 동시성이 왜 필요한지와 Context-Switching이 이루어지는것 까지는 알았다. 그럼 이제 쓰레드의 장점을 알아볼 준비가 되었다..!
+
+### 쓰레드의 장점
+
+#### Process Context-Switching
+
+프로세스의 Context-Switching 과정을 살펴보려면 프로세스를 관리하기 위한 상태정보를 담고있는 자료구조인 PCB(Process Control Block)에 대해서 먼저 살펴봐야한다.
+
+![](<../.gitbook/assets/image (16).png>)
+
+PCB는 대충 이러한 구조를 띄는데 하나씩 분석해보면 다음과 같다.
+
+* Pointer: 프로세스의 현재 위치를 저장하는 포인터 정보
+* Process State: 프로세스의 상태 (생성, 준비, 실행, 대기, 종료)
+* Process ID: 프로세스에 대한 고유한 ID
+* Program Counter  프로세스가 다음에 실행할 명령어의 주소를 저장
+* Register: 레지스터 및 범용 레지스터를 포함하는 CPU 레지스터에 있는 정보
+* Memory Limits: 운영 체제에서 사용하는 메모리 관리 시스템에 대한 정보
+* Open File Lists: 프로세스를 위해 열린 파일 목록
+
+이러한 PCB를 활용하여 Context-Switching을 하면 다음 다이어그램과 같이 실행된다.
+
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>Simple Process Context-Switching</p></figcaption></figure>
+
+여기서 주요하게 봐야할 점은 PCB1에 내 상태정보를 저장하고, PCB2에서 상태를 가져올 때 overhead가 생기는 것이다. 그리고 이러한 오버헤드는 여기 뿐만이 아닌 다양한 방면에서 일어나는데 주로,&#x20;
+
+* PCB 저장 및 복원
+* CPU 캐시 메모리 무효화 (CPU 캐시에 있는 내용을 모두 초기화하고, 새로운 프로세스 정보를 CPU 캐시에 적재해야한다)
+* 프로세스 스케줄링
+
+에서 생기게 된다. 그럼 다시 표를 보았을때, context-switching 시 일어나게 되는 overhead 즉 idle한 상태는 다음과 같다.
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>idle moment of Process Context Switching</p></figcaption></figure>
+
+#### Thread Context-Switching
+
+
+
+&#x20;
+
+참고
+
+{% embed url="https://www.geeksforgeeks.org/process-table-and-process-control-block-pcb/" %}
