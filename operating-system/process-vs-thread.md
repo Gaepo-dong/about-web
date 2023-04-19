@@ -18,7 +18,7 @@ description: OS의 기본
 
 쓰레드는 영어로 Thread 라, 단순히 `실` 이라고 번역하는 사람들이 많다. 하지만 Thread는 실타래 말고 `a line of reasoning or train of thought that connects the parts in a sequence` 이라는 뜻을 지니고 있고, 여러 연속된 것들을 묶어주는 의미를 지니고 있다. 즉 프로세스 내에서 동시에 진행되는 작업 갈래, 흐름의 단위라고 볼 수 있다.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Process와 Thread 도식화</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>Process와 Thread 도식화</p></figcaption></figure>
 
 사진을 보면 Process에 main thread 를 작성해두었는데, 한 프로세스에는 적어도 하나의 main thread가 존재해야되고, 다른 thread들을 관리하는 control tower라 볼 수 있다.
 
@@ -102,10 +102,27 @@ PCB는 대충 이러한 구조를 띄는데 하나씩 분석해보면 다음과 
 
 #### Thread Context-Switching
 
+먼저 쓰레드가 프로세스안에 어떤식으로 저장되어있는지 보면 다음과 같다.
 
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Thread in Process</p></figcaption></figure>
+
+그리고 프로세스와 마찬가지로, 쓰레드 또한 Context-Switching을 하기 위해서는 TCB(Thread Control Block)이 존재해야되고, 마찬가지로 Thread ID, 스케줄링 정보 또한 저장된다.&#x20;
+
+> 쓰레드간의 자원공유 및 동기화 또한 TCB에서 관리
+
+여기서 쓰레드 Context-Switching의 장점이 나온다.
+
+1.  TCB가 PCB보다 가벼움
+
+    > TCB에는 stack/register 포인터 등만 저장하기 때문에 PCB보다 가벼워 더 빨리 읽고 쓸수 있다
+2.  캐시 메모리를 초기화 하지 않아도 됨
+
+    > 프로세스 컨텍스트 스위칭이 일어날 경우, 다른 프로세스의 실행으로 인해 CPU가 새로운 명령어와 데이터를 로드해야 하기 때문에 CPU 캐시 메모리를 초기화 하여야 하지만, 스레드 컨텍스트 스위칭일 경우, 스택과 레지스터 값 등 일부 컨텍스트 정보만 변경되므로 CPU 캐시 메모리는 초기화되지 않는다
 
 &#x20;
 
 참고
 
 {% embed url="https://www.geeksforgeeks.org/process-table-and-process-control-block-pcb/" %}
+
+{% embed url="https://inpa.tistory.com/entry/%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%E2%9A%94%EF%B8%8F-%EC%93%B0%EB%A0%88%EB%93%9C-%EC%B0%A8%EC%9D%B4" %}
