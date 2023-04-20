@@ -49,7 +49,7 @@ Process와 Thread의 비교를 하기 전, 우선 Process의 구조에 대한 �
 
 즉 Stack만 존재하여도, 독립적인 함수 호출이 가능하며, 독립적인 실행 흐름이 추가될 수 있다는 뜻이다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Process와 Thread 도식화</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Process와 Thread 도식화</p></figcaption></figure>
 
 > 프로세스의 자원공유는 어떻게 할 수 있을까?
 >
@@ -104,7 +104,7 @@ PCB는 대충 이러한 구조를 띄는데 하나씩 분석해보면 다음과 
 
 먼저 쓰레드가 프로세스안에 어떤식으로 저장되어있는지 보면 다음과 같다.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Thread in Process</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>Thread in Process</p></figcaption></figure>
 
 그리고 프로세스와 마찬가지로, 쓰레드 또한 Context-Switching을 하기 위해서는 TCB(Thread Control Block)이 존재해야되고, 마찬가지로 Thread ID, 스케줄링 정보 또한 저장된다.&#x20;
 

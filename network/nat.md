@@ -53,7 +53,7 @@ Network Address Translation의 약자로, 네트워크 주소 변환을 담당�
 
 사설망에서 외부망으로 통신을 시도할 때 Gateway를 지나게 되고, 해당 Gateway를 지날 때 내 SRC\_IP를 Public IP로 수정하여 보내게 된다. 하지만, 이렇게 보낼 경우 외부에서 나의 Private IP를 모르기에 통신을 할 수 없게 된다.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Simple NAT with problem</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption><p>Simple NAT with problem</p></figcaption></figure>
 
 ### NAT Table
 
