@@ -40,8 +40,6 @@
   * [IPC](operating-system/ipc.md)
   * [Virtual Memory](operating-system/virtual-memory.md)
   * [Thrashing](operating-system/thrashing.md)
-  * [TLB](operating-system/tlb.md)
-  * [File System](operating-system/file-system.md)
   * [Synchronous vs Asynchronous](operating-system/synchronous-vs-asynchronous.md)
   * [RAID](operating-system/raid.md)
   * [CISC vs RISC](operating-system/cisc-vs-risc.md)

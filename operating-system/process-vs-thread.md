@@ -30,7 +30,7 @@ description: OS의 기본
 
 Process와 Thread의 비교를 하기 전, 우선 Process의 구조에 대한 이해를 먼저 해야된다.
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (4).png>)
 
 많이들 봤을듯한 다이어그램으로 시작하면, 크게 4가지 영역이 보인다.
 

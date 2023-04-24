@@ -49,7 +49,7 @@ description: 가상메모리에 대하여 간단하게 알아보자
 
 여기서 매우 유명한 그림을 보면 이해하기가 쉽다
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Simple TLB</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Simple TLB</p></figcaption></figure>
 
 이제 이런 구조를 지니고 있을 때 두가지 문제가 생길 수 있다.
 
