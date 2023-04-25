@@ -98,7 +98,7 @@ PCB는 대충 이러한 구조를 띄는데 하나씩 분석해보면 다음과 
 
 에서 생기게 된다. 그럼 다시 표를 보았을때, context-switching 시 일어나게 되는 overhead 즉 idle한 상태는 다음과 같다.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>idle moment of Process Context Switching</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (3).png" alt=""><figcaption><p>idle moment of Process Context Switching</p></figcaption></figure>
 
 #### Thread Context-Switching
 

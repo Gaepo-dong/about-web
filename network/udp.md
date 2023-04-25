@@ -14,7 +14,7 @@ UDP는 User Data Protocol의 약자로, 사용자 데이터그램 규약 즉 데
 
 ### UDP Socket Flow
 
-<figure><img src="../.gitbook/assets/image (6) (3).png" alt=""><figcaption><p>Easy UDP socket flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (3) (1).png" alt=""><figcaption><p>Easy UDP socket flow</p></figcaption></figure>
 
 ## UDP의 특징
 

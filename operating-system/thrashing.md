@@ -22,14 +22,21 @@ CPU의 이용률이 떨어지면, 컴퓨터는 자동으로 멀티 프로그래�
 
 ### 극복 방안
 
-#### Working Set Algorithm
+#### Working Set Algorithm / Locality
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Simple Working Set Diagram</p></figcaption></figure>
+
+> 프로세스가 많이 참조하는 페이지 집합을 메모리 공간에 계속 상주시켜 쓰레싱을 줄이는 방법
+
+즉 자주 사용되는 페이지들을 워킹셋으로 묶어 지역성을 활용하여 메모리에 동시에 올리는 작업이다. 해당 워킹셋의 합인 페이지가 할당된 프레임보다 커지게 되면 쓰레싱이 발생하게 된다.
 
 #### 페이지 부재 빈도 Algorithm
 
-#### Locality
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Simple Page Fault Frequency Alogirhtm</p></figcaption></figure>
 
+프로세스의 Page Fault를 주기적으로 조사하며 각 프로세스에 할당할 메모리 양을 동적으로 예측하고 조절하는 알고리즘이다.&#x20;
 
-
+해당 다이어그램에서 볼 수 있듯, Page Fault가 높다면(Upper Bound기준) Frame Count를 늘려 Page Fault를 낮추고, 반대로 너무 낮아도, Frame Count를 줄이며(잘 사용하지 않는 프레임 회수) 조절한다.\
 
 
 참고
