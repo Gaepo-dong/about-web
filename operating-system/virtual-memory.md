@@ -12,7 +12,7 @@ description: 가상메모리에 대하여 간단하게 알아보자
 
 가상 메모리의 시스템은, 메모리 주소 0부터 시작하는 개별 프로세스 메모리를 가지고 있다고 생각한다. 그리고 이를 바탕으로, 메모리 관리자가 실제로 사용할 부분만 물리 메모리에 적재하는 방식으로 생각할 수 있다.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Virtual Memory vs Main Memory</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (4).png" alt=""><figcaption><p>Virtual Memory vs Main Memory</p></figcaption></figure>
 
 그럼 여기서 Virtual Memory에 어떤 부분을 어떻게 Main Memory에 적재할지 그리고 그에대한 장단점에 대해서 알아보자.
 
@@ -22,7 +22,7 @@ description: 가상메모리에 대하여 간단하게 알아보자
 
 > 서로 같은 크기만큼 분할해야됨에 주의
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Simple Virtual Memory &#x26; Main Memory</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Simple Virtual Memory &#x26; Main Memory</p></figcaption></figure>
 
 이렇게 분할함에 따라, 모든 프로세스에 대한 정보를 메인 메모리에 담지 않아도 되고, 필요한것만 빼면 된다!
 
@@ -49,7 +49,7 @@ description: 가상메모리에 대하여 간단하게 알아보자
 
 여기서 매우 유명한 그림을 보면 이해하기가 쉽다
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Simple TLB</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Simple TLB</p></figcaption></figure>
 
 이제 이런 구조를 지니고 있을 때 두가지 문제가 생길 수 있다.
 

@@ -18,7 +18,7 @@ CPU의 이용률이 떨어지면, 컴퓨터는 자동으로 멀티 프로그래�
 
 > 국룰 사진으로 보면 이해가 더 쉽다
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Simple Thrashing</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Simple Thrashing</p></figcaption></figure>
 
 ### 극복 방안
 

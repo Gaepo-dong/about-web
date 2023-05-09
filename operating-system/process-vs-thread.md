@@ -49,7 +49,7 @@ Process와 Thread의 비교를 하기 전, 우선 Process의 구조에 대한 �
 
 즉 Stack만 존재하여도, 독립적인 함수 호출이 가능하며, 독립적인 실행 흐름이 추가될 수 있다는 뜻이다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1) (4).png" alt=""><figcaption><p>Process와 Thread 도식화</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (4) (1).png" alt=""><figcaption><p>Process와 Thread 도식화</p></figcaption></figure>
 
 > 프로세스의 자원공유는 어떻게 할 수 있을까?
 >
